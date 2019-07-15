@@ -26,12 +26,12 @@ public class CoolRefreshListFragment extends CommonListFragment {
     protected MVCHelper<List<EpoxyModel<?>>> createMVCHelper(View rootView, @Nullable Bundle savedInstanceState) {
         MVCCoolHelper<List<EpoxyModel<?>>> refreshHelper = new MVCCoolHelper<>(findCoolRefreshView(), createLoadView(), createLoadMoreView());
 
-        initRefreshHelper(refreshHelper);
+        initRefreshHelper(refreshHelper, savedInstanceState);
 
         return refreshHelper;
     }
 
-    protected void initRefreshHelper(MVCHelper<List<EpoxyModel<?>>> refreshHelper) {
+    protected void initRefreshHelper(MVCHelper<List<EpoxyModel<?>>> refreshHelper, @Nullable Bundle savedInstanceState) {
         refreshHelper.setNeedCheckNetwork(false);
     }
 
