@@ -35,6 +35,5 @@ dependencies {
 
     implementation project(path: ':common_recyclerview')
 
-    api 'com.airbnb.android:epoxy:2.19.0'
     annotationProcessor 'com.airbnb.android:epoxy-processor:2.19.0'
 }

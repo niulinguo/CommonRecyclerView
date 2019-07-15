@@ -1,4 +1,4 @@
-package com.lingo.common_recyclerview;
+package com.lingo.common_recyclerview.common;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -15,7 +15,7 @@ public abstract class BaseFragment extends Fragment {
 
     @Nullable
     @Override
-    public final View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mRootView = onCreateRootView(inflater, container, savedInstanceState);
 
         initRootView(mRootView, savedInstanceState);
@@ -27,7 +27,7 @@ public abstract class BaseFragment extends Fragment {
 
     public abstract void initRootView(View rootView, @Nullable Bundle savedInstanceState);
 
-    public final <T extends View> T findViewById(@IdRes int id) {
+    public <T extends View> T findViewById(@IdRes int id) {
         if (mRootView == null) {
             return null;
         }

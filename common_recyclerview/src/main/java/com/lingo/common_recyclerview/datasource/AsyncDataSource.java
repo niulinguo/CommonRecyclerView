@@ -7,11 +7,9 @@ import com.shizhefei.mvc.ResponseSender;
 
 import java.util.List;
 
-public class AsyncDataSource implements IAsyncDataSource<List<EpoxyModel<?>>> {
+public abstract class AsyncDataSource implements IAsyncDataSource<List<EpoxyModel<?>>> {
     @Override
-    public RequestHandle refresh(ResponseSender<List<EpoxyModel<?>>> sender) throws Exception {
-        return null;
-    }
+    public abstract RequestHandle refresh(ResponseSender<List<EpoxyModel<?>>> sender) throws Exception;
 
     @Override
     public RequestHandle loadMore(ResponseSender<List<EpoxyModel<?>>> sender) throws Exception {

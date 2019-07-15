@@ -1,4 +1,4 @@
-package com.lingo.common_recyclerview.epoxy;
+package com.lingo.common_recyclerview.epoxy.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,9 +6,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.airbnb.epoxy.EpoxyModel;
-import com.lingo.common_recyclerview.BaseFragment;
-import com.lingo.common_recyclerview.LoadMoreHelper;
-import com.lingo.common_recyclerview.LoadViewHelper;
+import com.lingo.common_recyclerview.common.BaseFragment;
+import com.lingo.common_recyclerview.common.LoadMoreHelper;
+import com.lingo.common_recyclerview.common.LoadViewHelper;
+import com.lingo.common_recyclerview.epoxy.adapter.CommonListAdapter;
+import com.lingo.common_recyclerview.epoxy.adapter.FixEpoxyAdapter;
 import com.shizhefei.mvc.ILoadViewFactory;
 import com.shizhefei.mvc.MVCHelper;
 
@@ -19,7 +21,7 @@ public abstract class CommonListFragment extends BaseFragment {
     protected MVCHelper<List<EpoxyModel<?>>> mRefreshHelper;
 
     @Override
-    public final void initRootView(View rootView, @Nullable Bundle savedInstanceState) {
+    public void initRootView(View rootView, @Nullable Bundle savedInstanceState) {
         RecyclerView recyclerView = findRecyclerView(rootView, savedInstanceState);
         CommonListAdapter adapter = createAdapter(rootView, savedInstanceState);
         recyclerView.setAdapter(adapter);

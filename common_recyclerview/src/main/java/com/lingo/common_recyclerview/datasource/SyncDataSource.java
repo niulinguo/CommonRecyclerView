@@ -5,11 +5,9 @@ import com.shizhefei.mvc.IDataSource;
 
 import java.util.List;
 
-public class SyncDataSource implements IDataSource<List<EpoxyModel<?>>> {
+public abstract class SyncDataSource implements IDataSource<List<EpoxyModel<?>>> {
     @Override
-    public List<EpoxyModel<?>> refresh() throws Exception {
-        return null;
-    }
+    public abstract List<EpoxyModel<?>> refresh() throws Exception;
 
     @Override
     public List<EpoxyModel<?>> loadMore() throws Exception {

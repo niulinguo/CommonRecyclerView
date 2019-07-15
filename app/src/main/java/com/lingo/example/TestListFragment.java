@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.airbnb.epoxy.EpoxyModel;
 import com.lingo.example.datasource.AsyncMockDataSource;
-import com.lingo.common_recyclerview.epoxy.CoolRefreshListFragment;
+import com.lingo.common_recyclerview.epoxy.fragment.CoolRefreshListFragment;
 import com.shizhefei.mvc.ILoadViewFactory;
 import com.shizhefei.mvc.MVCHelper;
 

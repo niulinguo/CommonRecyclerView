@@ -1,4 +1,4 @@
-package com.lingo.common_recyclerview.epoxy;
+package com.lingo.common_recyclerview.epoxy.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

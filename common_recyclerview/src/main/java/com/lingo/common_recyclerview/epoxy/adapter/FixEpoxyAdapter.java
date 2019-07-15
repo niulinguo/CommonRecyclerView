@@ -1,4 +1,4 @@
-package com.lingo.common_recyclerview.epoxy;
+package com.lingo.common_recyclerview.epoxy.adapter;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;

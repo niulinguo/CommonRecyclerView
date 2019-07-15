@@ -1,4 +1,4 @@
-package com.lingo.common_recyclerview.epoxy;
+package com.lingo.common_recyclerview.epoxy.adapter;
 
 import com.airbnb.epoxy.EpoxyModel;
 import com.airbnb.epoxy.SimpleEpoxyAdapter;

@@ -1,4 +1,4 @@
-package com.lingo.common_recyclerview;
+package com.lingo.common_recyclerview.common;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -16,9 +16,9 @@ import com.shizhefei.view.vary.VaryViewHelper;
 
 public class LoadViewHelper implements ILoadViewFactory.ILoadView {
 
-    private VaryViewHelper helper;
-    private View.OnClickListener onClickRefreshListener;
-    private Context context;
+    protected VaryViewHelper helper;
+    protected View.OnClickListener onClickRefreshListener;
+    protected Context context;
 
     @Override
     public void init(View switchView, View.OnClickListener onClickRefreshListener) {

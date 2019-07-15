@@ -1,4 +1,4 @@
-package com.lingo.common_recyclerview;
+package com.lingo.common_recyclerview.common;
 
 import android.content.Context;
 import android.graphics.Color;
